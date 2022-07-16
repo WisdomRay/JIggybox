@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="asset/CSS/style.css">
+    <link rel="stylesheet" href="asset/CSS/responsive.css">
+
 </head>
 <body>
     <div class="body">
@@ -28,10 +30,11 @@
             <div id="nav-button">
                 <a id="button1" href="">Get Notified</a>
             </div>
+            <div class="nav-icon"></div>
         </div>
         <div class="section">
             <div class="sub-section1">
-                 <div id="wrap1">
+                <div id="wrap1">
                     <p>Wahala no de ever finish,
                         Save today, <span>Jiggy</span> tomorrow.</p>
                         <p>We're thrilled to announce that Jiggybox is becoming part of 
@@ -42,7 +45,7 @@
                         <a id="btn2" href="">Learn More<span class="material-symbols-outlined">arrow_right</span></a>
                         
                     </div>
-                    </div>
+                </div>
 
                 <div id="wrap2">
                     <p id="text1">With Jiggyvest you’ll be able to</p>
@@ -50,39 +53,38 @@
                     <div id="sub-wrap">
                         
                        <div id="same">
-                        <div class="sub">
-                            <img id="img1" src="asset/img.svg" alt="">
-                            <div class="text">
-                                <p id="first-text">Save & Invest with freinds
-                                    or coworkers</p>
-                                <p>Customer support is a specific type of
-                                    service customers.</p>
+                            <div class="sub">
+                                <img id="img1" src="asset/img.svg" alt="">
+                                <div class="text">
+                                    <p id="first-text">Save & Invest with freinds
+                                        or coworkers</p>
+                                    <p>Customer support is a specific type of
+                                        service customers.</p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="sub">
-                            <img id="img2" src="asset/img (1).svg" alt="">
-                            <div class="text">
-                                <p id="second-text">Monitor & have total controls
-                                    over your investments.</p>
-                                <p>Customer support is a specific type of
-                                    service customers.</p>
+                            <div class="sub">
+                                <img id="img2" src="asset/img (1).svg" alt="">
+                                <div class="text">
+                                    <p id="second-text">Monitor & have total controls
+                                        over your investments.</p>
+                                    <p>Customer support is a specific type of
+                                        service customers.</p>
+                                </div>
                             </div>
-                        </div>
                        </div>
 
                       <div id="same1">
-                        <div class="sub">
-                            <img id="img3" src="asset/img.png" alt="">
-                            <div class="text">
-                                <p id="third-text">Budget for outings from your
-                                    savings & Investment</p>
-                                <p>Customer support is a specific type of
-                                    service customers.</p>
+                            <div class="sub">
+                                <img id="img3" src="asset/img.png" alt="">
+                                <div class="text">
+                                    <p id="third-text">Budget for outings from your
+                                        savings & Investment</p>
+                                    <p>Customer support is a specific type of
+                                        service customers.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="sub">
-                        </div>
+                            <div class="sub"></div>
                       </div>
 
                     </div>
@@ -138,12 +140,14 @@ window.onscroll=function(){
 }
 function myFunction(){
         if (document.documentElement.scrollTop >70 ){
+        
             document.getElementsByClassName("nav")[0].style.backgroundColor="#061C2A";
         }
         else{
             document.getElementsByClassName("nav")[0].style.backgroundColor="#060C22";
             
         }
+
 }
 
 
