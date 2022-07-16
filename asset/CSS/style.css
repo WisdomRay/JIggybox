@@ -37,7 +37,6 @@ body{
     width: 20%;
     display: flex;
     justify-content: center;
-    border: 1px solid red;
 }
 #logo img{
     padding-left: 17%;
@@ -279,8 +278,7 @@ body{
     color: #FFFFFF;
 }
 #sector2 p{
-    margin-left: 15px;
-
+    padding-left: 3%;
 }
 
 .secondsection{
@@ -304,6 +302,7 @@ body{
     background-color: #061C2A;
 
 }
+
 /* signup */
 .sign-up{
     width:100%;

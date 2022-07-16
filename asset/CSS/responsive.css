@@ -14,7 +14,6 @@
     .sub-section1{
         width: 100%;
         transform: translateY(-200px);
-        border: 1px solid red;
     }
     .sub-section2{
         width: 80%;
@@ -29,8 +28,6 @@
     .section{
         height: 1300px;
         flex-direction: column-reverse;        
-        border: 1px solid red;
-
     }
     #wrap1 p:nth-child(1){
         width: 95%;
@@ -44,6 +41,7 @@
     }
     #button-wrap{
         margin-inline: 3%;
+        width: 100%;
     }
     #sub-wrap{
         margin-inline: 0%;
@@ -70,8 +68,6 @@
     #second-text{
         width: 90%;
         margin-left: 3%;
-        border: 1px solid red;
-
     }
     #third-text{
         width: 90%;
@@ -82,12 +78,116 @@
     }
     .foot{
         transform: translateY(-150px);
-
     }
    
 }
-/* @media screen and (max-width:640px) {
-    #wrap1 p:nth-child(1){
-
+@media screen and (max-width:800px) {
+    #logo{
+        width: 22%;
+    }
+    
+    #same{
+        flex-flow: column wrap;
+        height: fit-content;
+    }
+    #same1{
+        flex-flow: column wrap;
+        height: fit-content;
+    }
+    .sub{
+        width: 100%;
+    }
+    #img2{
+        margin-left: 5.5%;
+    }
+    #first-text{
+        width: 100%; 
+    }
+    #second-text{
+        width: 100%;
+    }
+    #third-text{
+        width: 100%;
+    }
    
-} */
+    .foot{
+        flex-direction: column;
+        height: max-content;
+    }
+    .firstsection{
+        width: 100%;
+    }
+    .secondsection{
+        flex-direction: column;
+        width: 100%;
+
+    }
+    #sector1 img{
+        padding-left: 4%;
+    }
+    #sector2{
+        padding-left: 1.8%;
+    }
+    #sec1{
+        margin-left: 5%;
+    }
+    #sec2{
+        margin-left: 5%;
+    }
+    #sec3{
+        margin-left: 5%;
+    }
+    #social-icon{
+        width: 20%;
+        font-size: 1.2em;
+    }
+    
+}
+@media screen and (max-width:640px) {
+    #logo{
+        width: 26%;
+    }
+    #wrap1 p:nth-child(1){
+        margin-top: -35px;
+    }
+    .foot{
+        transform: translateY(-170px);
+    }
+}
+@media screen and (max-width:560px) {
+    #logo{
+        width: 30%;
+    }
+    #wrap1 p:nth-child(1){
+        margin-top: -65px;
+    }
+    
+}
+@media screen and (max-width:460px) {
+    #logo{
+        width: 33%;
+    }
+    #wrap1 p:nth-child(1){
+        margin-top: -95px;
+    }
+    
+}
+@media screen and (max-width:320px) {
+    #logo{
+        width: 40%;
+    }
+    #wrap1 p:nth-child(1){
+        width: 100%;
+        margin-top: -160px;
+        font-size: 2em;
+    }
+    #wrap1 p:nth-child(2){
+        width: 95%;
+        font-size: 1.1em;
+    }
+    #social-icon{
+        width: 20%;
+        font-size: 1em;
+    }
+    
+}
