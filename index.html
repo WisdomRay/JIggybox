@@ -160,9 +160,13 @@ function myFunction(){
         if (document.documentElement.scrollTop >70 ){
         
             document.getElementsByClassName("nav")[0].style.backgroundColor="#061C2A";
+            document.getElementById("nav-link").style.backgroundColor="#061C2A";
+
         }
         else{
             document.getElementsByClassName("nav")[0].style.backgroundColor="#060C22";
+            document.getElementById("nav-link").style.backgroundColor="#060C22";
+
             
         }
 
@@ -174,29 +178,19 @@ function nav(){
     let x = document.getElementById('nav-link');
     if (x.style.display=='none' && toggle==1) {
         x.style.display='block'; 
-        // document.getElementById('nav-link').style.left = "-100%"
-        // toggle = 0;
+        x.style.height = "220px"
+        toggle = 0;
     }
     else if(toggle==0){
         
-        document.getElementById('nav-link').style.left = "0%"
+        x.style.height = "0px"
         toggle = 1;
     }else{
         x.style.display='none';
     }
 
-    // if () {
-    //     
-        
-    // } else if () {
-    //     
-        
-    // }
-
 }
-// function toogleNav(){
-   
-// }
+
 
 
 </script>
