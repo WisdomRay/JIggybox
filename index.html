@@ -26,7 +26,7 @@
                 <div id="nav-link">
                     <a href="">Why JiggyBox </a><span
                         class="material-symbols-outlined">expand_more</span>
-                    <a href="">Join our team</a>
+                    <a href="signup.html">Join our team</a>
                     <a href="">Contact us</a>
                     <a href="">FAQs</a>
 
@@ -35,7 +35,9 @@
                 <div id="nav-button">
                     <a id="button1" href="">Get Notified</a>
                 </div>
-                <div class="nav-icon"></div>
+                <div class="nav-icon" onclick="nav()" >
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
             <div class="section">
                 <div class="sub-section1">
@@ -150,7 +152,7 @@
             </div>
 
         </div>
-        <script>
+<script>
 window.onscroll=function(){
   myFunction()
 }
@@ -166,12 +168,37 @@ function myFunction(){
 
 }
 
+function nav(){
 
+    const toggle = 1;
+    let x = document.getElementById('nav-link');
+    if (x.style.display=='none' && toggle==1) {
+        x.style.display='block'; 
+        // document.getElementById('nav-link').style.left = "-100%"
+        // toggle = 0;
+    }
+    else if(toggle==0){
+        
+        document.getElementById('nav-link').style.left = "0%"
+        toggle = 1;
+    }else{
+        x.style.display='none';
+    }
 
-function topp(){
-  window.scrollTo(0,0);
+    // if () {
+    //     
+        
+    // } else if () {
+    //     
+        
+    // }
 
 }
-    </script>
-    </body>
+// function toogleNav(){
+   
+// }
+
+
+</script>
+</body>
 </html>
