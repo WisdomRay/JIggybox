@@ -31,11 +31,19 @@
                     <a href="">FAQs</a>
 
                 </div>
+                <div id="navlink">
+                    <a href="">Why JiggyBox </a><span
+                        class="material-symbols-outlined">expand_more</span>
+                    <a href="signup.html">Join our team</a>
+                    <a href="">Contact us</a>
+                    <a href="">FAQs</a>
+
+                </div>
 
                 <div id="nav-button">
                     <a id="button1" href="">Get Notified</a>
                 </div>
-                <div class="nav-icon" onclick="nav()" >
+                <div class="nav-icon" onclick="nav()">
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
@@ -160,12 +168,12 @@ function myFunction(){
         if (document.documentElement.scrollTop >70 ){
         
             document.getElementsByClassName("nav")[0].style.backgroundColor="#061C2A";
-            document.getElementById("nav-link").style.backgroundColor="#061C2A";
+            document.getElementById("navlink").style.backgroundColor="#061C2A";
 
         }
         else{
             document.getElementsByClassName("nav")[0].style.backgroundColor="#060C22";
-            document.getElementById("nav-link").style.backgroundColor="#060C22";
+            document.getElementById("navlink").style.backgroundColor="#060C22";
 
             
         }
@@ -175,21 +183,22 @@ function myFunction(){
 function nav(){
 
     const toggle = 1;
-    let x = document.getElementById('nav-link');
+    let x = document.getElementById('navlink');
     if (x.style.display=='none' && toggle==1) {
         x.style.display='block'; 
-        x.style.height = "220px"
-        toggle = 0;
+
+        x.style.height = "0px"
+        x.style.transition="height"
     }
     else if(toggle==0){
         
-        x.style.height = "0px"
-        toggle = 1;
+        x.style.height = "210px"
     }else{
         x.style.display='none';
     }
 
 }
+nav()
 
 
 

@@ -3,22 +3,24 @@
         z-index: 50;
     }
     #nav-link{
-        display:none ;
-        width: 100%;
+        display: none;
+    }
+    #navlink{
         position: absolute;
         top: 100px;
-        height: 220px;
-        flex-direction: column;
         background-color: #060C22;
-        transition: height  ease-in 2s;
         
     }
-    #nav-link a{
-        display: flex;
-        justify-content: center ;
-        margin-top: 30px;
-        margin-bottom: 15px;
+    #navlink a{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+        margin-bottom: 5px;
         font-size: 1.2em;
+    }
+    #navlink span{
+        display: none;
     }
     #nav-link span{
         display: none;
@@ -189,6 +191,9 @@
     }
     .foot{
         transform: translateY(-170px);
+    }
+    #nav-link{
+        top: 98px;
     }
     /* signup */
     .signup{
