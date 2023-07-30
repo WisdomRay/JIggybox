@@ -11,7 +11,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>JiggyBox</title>
+        <link rel="stylesheet" href="asset/bootstrap-icons-1.10.5/font/bootstrap-icons.css">
         <link rel="stylesheet" href="asset/CSS/style.css">
         <link rel="stylesheet" href="asset/CSS/responsive.css">
 
@@ -24,8 +25,7 @@
                     <p>JiggyBox</p>
                 </div>
                 <div id="nav-link">
-                    <a href="">Why JiggyBox </a><span
-                        class="material-symbols-outlined">expand_more</span>
+                    <a href="">Why JiggyBox <i class="bi bi-chevron-down"></i> </a>
                     <a href="signup.html">Join our team</a>
                     <a href="">Contact us</a>
                     <a href="">FAQs</a>
@@ -33,18 +33,18 @@
                 </div>
                 <div id="navlink">
                     <a href="">Why JiggyBox </a><span
-                        class="material-symbols-outlined">expand_more</span>
+                    class="material-symbols-outlined">expand_more</span>
                     <a href="signup.html">Join our team</a>
                     <a href="">Contact us</a>
                     <a href="">FAQs</a>
-
                 </div>
 
                 <div id="nav-button">
                     <a id="button1" href="">Get Notified</a>
                 </div>
-                <div class="nav-icon" onclick="nav()">
-                    <i class="fa-solid fa-bars"></i>
+                <div class="nav-icon">
+                    <i class="bi bi-list"></i>
+                    <i class="bi bi-x"></i>
                 </div>
             </div>
             <div class="section">
@@ -59,8 +59,7 @@
                             1.5 million customers get the service they deserve.</p>
                         <div id="button-wrap">
                             <a id="btn1" href="">Join the waitlist</a>
-                            <a id="btn2" href="">Learn More<span
-                                    class="material-symbols-outlined">arrow_right</span></a>
+                            <a id="btn2" href="">Learn More<span class="material-symbols-outlined">arrow_right</span></a>
                         </div>
                     </div>
 
@@ -71,7 +70,9 @@
 
                             <div id="same">
                                 <div class="sub">
-                                    <img id="img1" src="asset/img.svg" alt="">
+                                    <div class="imgx">
+                                        <img id="img1" src="asset/img.svg" alt="">
+                                    </div>
                                     <div class="text">
                                         <p id="first-text">Save & Invest with
                                             freinds
@@ -84,8 +85,10 @@
                                 </div>
 
                                 <div class="sub">
-                                    <img id="img2" src="asset/img (1).svg"
-                                        alt="">
+                                    <div class="imgx">
+                                        <img id="img2" src="asset/img (1).svg"alt="">
+
+                                    </div>
                                     <div class="text">
                                         <p id="second-text">Monitor & have total
                                             controls
@@ -97,9 +100,11 @@
                                 </div>
                             </div>
 
-                            <div id="same1">
+                            <div id="same">
                                 <div class="sub">
-                                    <img id="img3" src="asset/img.png" alt="">
+                                    <div class="imgx">
+                                        <img id="img3" src="asset/img.png" alt="">
+                                    </div>
                                     <div class="text">
                                         <p id="third-text">Budget for outings
                                             from your
@@ -109,7 +114,6 @@
                                             service customers.</p>
                                     </div>
                                 </div>
-                                <div class="sub"></div>
                             </div>
 
                         </div>
@@ -118,7 +122,7 @@
 
                 <div class="sub-section2">
                     <div id="image">
-                        <!-- <img src="asset/1 1.svg" alt=""> -->
+                        <img src="./asset/1.svg" alt="">
                     </div>
                 </div>
 
@@ -151,57 +155,15 @@
                     <div id="sec3">
                         <p>Social Media</p>
                         <div id="social-icon">
-                            <a href=""><i class="fa-brands fa-instagram"></i></a>
-                            <a href=""> <i class="fa-brands fa-twitter"></i></a>
-                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""> <i class="bi bi-twitter"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
 
         </div>
-<script>
-window.onscroll=function(){
-  myFunction()
-}
-function myFunction(){
-        if (document.documentElement.scrollTop >70 ){
-        
-            document.getElementsByClassName("nav")[0].style.backgroundColor="#061C2A";
-            document.getElementById("navlink").style.backgroundColor="#061C2A";
-
-        }
-        else{
-            document.getElementsByClassName("nav")[0].style.backgroundColor="#060C22";
-            document.getElementById("navlink").style.backgroundColor="#060C22";
-
-            
-        }
-
-}
-
-function nav(){
-
-    const toggle = 1;
-    let x = document.getElementById('navlink');
-    if (x.style.display=='none' && toggle==1) {
-        x.style.display='block'; 
-
-        x.style.height = "0px"
-        x.style.transition="height"
-    }
-    else if(toggle==0){
-        
-        x.style.height = "210px"
-    }else{
-        x.style.display='none';
-    }
-
-}
-nav()
-
-
-
-</script>
+<script src="main.js"></script>
 </body>
 </html>

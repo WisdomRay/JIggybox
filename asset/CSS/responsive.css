@@ -34,72 +34,41 @@
     
     .sub-section1{
         width: 100%;
-        transform: translateY(-200px);
     }
     .sub-section2{
-        width: 80%;
-        margin-left: 10%;
-        transform: translateY(-200px);
+        width: 100%;
     }
-    #image{
-        background-size: contain;
-        background-position-y:center ;
-        background-position-x: center;
-    }
+
     .section{
-        height: 1300px;
         flex-direction: column-reverse;        
     }
+    .sub-section2{
+        margin-bottom: 50px;
+    }
     #wrap1 p:nth-child(1){
-        width: 95%;
-        margin-inline: 0%;
-        padding-left: 3%;
+        width: 100%;
         margin-top: 1px;
     }
     #wrap1 p:nth-child(2){
-        width: 95%;
-        margin-inline: 3%;
+        width: 97%;
+        margin-top: -30px;
+        margin-bottom: 20px;
     }
     #button-wrap{
-        margin-inline: 3%;
-        width: 100%;
+        width: 97%;
+        justify-content: space-between;
     }
-    #sub-wrap{
-        margin-inline: 0%;
+ 
+    #same{
+        padding-left: 0px;
     }
-    #text1{
-        margin-inline: 3%;
+    #img1,#img2, #img3{
+        transform: translateY(0px);
     }
-    #img1{
-        width: 10%;
-        margin-left: 5%;
-    }
-    #img2{
-        width: 10%;
-    }
-    #img3{
-        width: 10%;
-        margin-left: 5%;
-    }
-    #first-text{
-        width: 90%;
-        margin-left: 3%;
-        
-    }
-    #second-text{
-        width: 90%;
-        margin-left: 3%;
-    }
-    #third-text{
-        width: 90%;
-        margin-left: 3%;
-    }
-    .text p:nth-child(2){
-        margin-left: 3%;
-    }
-    .foot{
-        transform: translateY(-150px);
-    }
+   #first-text, #second-text, #third-text{
+        font: 1.1em 'Aeonik';
+        font-weight: 900;
+    } 
     /* signup */
     .text1 p{
         font-size: 4em;
@@ -112,44 +81,30 @@
     }
    
 }
+@media screen and (max-width:867px) {
+    #same{
+        flex-flow: column wrap;
+        padding-left: 28px;
+        box-sizing: border-box;
+    }
+}
 @media screen and (max-width:800px) {
     #logo{
         width: 22%;
     }
-    #same{
-        flex-flow: column wrap;
-        height: fit-content;
-    }
-    #same1{
-        flex-flow: column wrap;
-        height: fit-content;
-    }
     .sub{
         width: 100%;
     }
-    #img2{
-        margin-left: 5.5%;
-    }
-    #first-text{
-        width: 100%; 
-    }
-    #second-text{
-        width: 100%;
-    }
-    #third-text{
-        width: 100%;
-    }
-   
-    .foot{
-        flex-direction: column;
-        height: max-content;
+    #first-text, #second-text, #third-text{
+        font: 1.2em 'Aeonik';
+        font-weight: 800;
     }
     .firstsection{
-        width: 100%;
+        width: 35%;
     }
     .secondsection{
-        flex-direction: column;
-        width: 100%;
+        width: 60%;
+        justify-content: space-around;
     }
     #sector1 img{
         padding-left: 4%;
@@ -157,15 +112,7 @@
     #sector2{
         padding-left: 1.8%;
     }
-    #sec1{
-        margin-left: 5%;
-    }
-    #sec2{
-        margin-left: 5%;
-    }
-    #sec3{
-        margin-left: 5%;
-    }
+
     #social-icon{
         width: 20%;
         font-size: 1.2em;
@@ -182,15 +129,17 @@
     }
     
 }
+@media screen and (max-width:767px){
+    .secondsection{
+        width: 55%;
+    }
+}
 @media screen and (max-width:640px) {
     #logo{
         width: 26%;
     }
-    #wrap1 p:nth-child(1){
-        margin-top: -35px;
-    }
-    .foot{
-        transform: translateY(-170px);
+    .firstsection{
+        width: 40%;
     }
     #nav-link{
         top: 98px;
@@ -204,31 +153,23 @@
     #logo{
         width: 30%;
     }
-    #wrap1 p:nth-child(1){
-        margin-top: -65px;
-    }
-    #img1{
-        width: 10%;
-        margin-left: 3%;
-    }
-    #img2{
-        width: 10%;
-        margin-left: 3%;
-    }
-    #img3{
-        width: 10%;
-        margin-left: 3%;
-    }
-    #second-text{
-        width: 90%;
-    }
-    #third-text{
-        width: 90%;
-    }
     .nav-icon{
         margin-left: 50%;
         width: 10%;
     }
+    .foot{
+        flex-direction: column;
+
+    }
+    .firstsection, .secondsection{
+        width: 100%;
+    }
+    .secondsection{
+        justify-content: space-between;
+        padding-left: 5%;
+        box-sizing: border-box;
+    }
+
     /* signup */
     .text1 p{
         font-size: 3em;
@@ -241,15 +182,26 @@
         font-size: 1.1em;
     }
 }
+@media screen and (max-width:480px) {
+    .secondsection{
+        flex-direction: column;
+    }
+    .section{
+        margin-bottom: 200px;
+    }
+    #wrap1,#same{
+        padding-left: 10px !important;
+    }
+    #text1{
+        margin-left: 10px;
+    }
+}
 @media screen and (max-width:460px) {
     #logo{
         width: 33%;
     }
-    #wrap1 p:nth-child(1){
-        margin-top: -95px;
-    }
        /* signup */
-       .text1 p{
+    .text1 p{
         font-size: 3em;
     }
     #cir{
@@ -262,18 +214,6 @@
     
 }
 @media only screen and (max-width:423px)  {
-    #img1{
-        margin-left: 0;
-    }
-    #img2{
-        margin-left: 0;
-    }
-    #img3{
-        margin-left: 0;
-    }
-    #first-text{
-        width: 90%;
-    }
     .nav-icon{
         margin-left: 40%;
         width: 15%;
@@ -295,20 +235,42 @@
     .policy{
         width: 95%;
     }
-}
-@media screen and (max-width:320px) {
     #wrap1 p:nth-child(1){
         width: 100%;
-        margin-top: -160px;
-        font-size: 2em;
+        font: 2em 'Aeonik';
+        font-weight: 900;
+        margin-bottom: 50px;
     }
     #wrap1 p:nth-child(2){
-        width: 95%;
-        font-size: 1.1em;
+        width: 100%;
+        font: 1em 'Aeonik';
     }
+
+}
+@media screen and (max-width:387px) {
+    .imgx{
+        margin-top: -20px;
+    }
+}
+@media screen and (max-width:338px) {
+    #wrap1 p:nth-child(1){
+        font: 2.5em 'Aeonik';
+    }
+    #wrap1 p:nth-child(2){
+        font: 1.1em 'Aeonik';
+    }
+}
+@media screen and (max-width:320px) {
     #social-icon{
         width: 20%;
         font-size: 1em;
+    }
+    #wrap1 p:nth-child(1){
+        font: 1.7em 'Aeonik';
+        font-weight: bolder;
+    }
+    #wrap1 p:nth-child(2){
+        font: 1em 'Aeonik';
     }
     /* signup */
     .signup{
